@@ -3,30 +3,26 @@ import sys
 import pandas as pd
 import re
 from collections import Counter
-from utils import *
-from resources import *
+from helpers import *
 
 input_path = sys.argv[1]
-# output_occupations_path = sys.argv[2]
-# output_states_path = sys.argv[3]
 OUTPUT_DIR = './output/'
 
-# file_path = '../input/H1B_FY_2014.csv'
-states = Counter()
-occupations = Counter()
+# total number of certified applications
 total = 0
 
-
+# counts of all required fileds
 counts = {target: Counter() for target in targets}
 
 with open(input_path, mode='r') as f:
 	# read input file
 	reader = csv.reader(f, delimiter=';')
 
-	# get column names (firt line of the input file)
+	# get column names (firt line of the input file) as a list
 	columns = next(reader)
 
-	# get indices of the targeted column names
+	# get indices of the interested column
+	# criteria and targets are imported from helpers.py
 	col_indices = get_col_indices(columns, criteria, targets)
 
 	for row in reader:

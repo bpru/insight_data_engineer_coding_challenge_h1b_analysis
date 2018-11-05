@@ -17,11 +17,15 @@ Your code should be modular and reusable for future. If the newspaper gets data 
       ├── README.md 
       ├── run.sh
       ├── src
-      │   └──h1b_counting.py
-      │	  └──helpers.py
-      │	  └──resources
-      │	     └──criteria.json
-      │	     └──counting_targets.json
+      │   ├──h1b_counting.py
+      │   ├──helpers.py
+      │   ├──resources
+      │   |  ├──criteria.json
+      │   |  └──counting_targets.json
+      |   ├──unit_tests.py
+      |   ├──columns.py
+      |   └──run_test.sh
+      |
       ├── input
       │   └──h1b_input.csv
       ├── output

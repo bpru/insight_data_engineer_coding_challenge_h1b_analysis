@@ -1,0 +1,5 @@
+out_source/
+insight_testsuite/tests/
+insight_testsuite/results.txt
+insight_testsuite/temp
+src/__pycache__/

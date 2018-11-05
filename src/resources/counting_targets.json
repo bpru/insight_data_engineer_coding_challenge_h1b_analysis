@@ -1,0 +1,30 @@
+{
+  "state": {
+    "input_col_names": [
+      "WORKSITE_STATE",
+      "LCA_CASE_WORKLOC1_STATE",
+      "State_1"
+    ],
+    "output_col_names": [
+      "TOP_STATES",
+      "NUMBER_CERTIFIED_APPLICATIONS",
+      "PERCENTAGE"
+    ],
+    "top_k": 10,
+    "output_file_name": "top_10_states.txt"
+  },
+  "occupation": {
+    "input_col_names": [
+      "SOC_NAME",
+      "LCA_CASE_SOC_NAME",
+      "Occupational_Title"
+    ],
+    "output_col_names": [
+      "TOP_OCCUPATIONS",
+      "NUMBER_CERTIFIED_APPLICATIONS",
+      "PERCENTAGE"
+    ],
+    "top_k": 10,
+    "output_file_name": "top_10_occupations.txt"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "case_status": {
+    "input_col_names": [
+      "CASE_STATUS",
+      "STATUS",
+      "Approval_Status"
+    ],
+    "qualified_values": [
+      "CERTIFIED"
+    ]
+  }
+}

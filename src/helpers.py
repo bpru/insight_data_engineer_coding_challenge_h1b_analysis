@@ -1,10 +1,21 @@
 import json
+import os
+
+# get path of current working directory
+cur_working_dir = os.getcwd()
+
+# get path of this file (helpers.py)
+script_path = os.path.realpath(__file__)
+
+# get relative path from cur_working_dir to script_path
+relative_path = os.path.relpath(script_path, cur_working_dir)
 
 # set invariants
-RESOURCES_DIR = './src/resources/'
+RESOURCES_DIR = os.path.curdir + '/' + os.path.dirname(relative_path) + '/resources/'
 CRITERIA_PATH = RESOURCES_DIR + 'criteria.json'
 COUNTING_TARGETS_PATH = RESOURCES_DIR + 'counting_targets.json'
 
+# load info of criteria and counting targets from corresponding json files
 CRITERIA = json.loads(open(CRITERIA_PATH).read())
 TARGETS = json.loads(open(COUNTING_TARGETS_PATH).read())
 

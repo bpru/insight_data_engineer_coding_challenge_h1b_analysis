@@ -1,5 +1,6 @@
 import csv
 import sys
+import os
 from collections import Counter
 from helpers import *
 
@@ -64,7 +65,7 @@ def run(input_path, output_dir, criteria, targets):
 INPUT_PATH = sys.argv[1]
 
 # set output file directory
-OUTPUT_DIR = './output/'
+OUTPUT_DIR = os.path.dirname(INPUT_PATH) + '/../output/'
 
 # run program
 # CRITERIA and TARGETS are imported from helpers.py

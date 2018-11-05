@@ -26,7 +26,6 @@ def run(input_path, output_dir, criteria, targets):
 
 		# save column names (firt line of the input file) as a list
 		columns = next(reader)
-		print(columns)
 
 		# get indices of the required columns for counting and store in a dictionary
 		col_indices = get_col_indices(columns, criteria, targets)

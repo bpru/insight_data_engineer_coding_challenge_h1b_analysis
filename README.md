@@ -18,10 +18,10 @@ Your code should be modular and reusable for future. If the newspaper gets data 
       ├── run.sh
       ├── src
       │   └──h1b_counting.py
-      │	└──helpers.py
-      │	└──resources
-      │		└──criteria.json
-      │		└──counting_targets.json
+      │	  └──helpers.py
+      │	  └──resources
+      │	     └──criteria.json
+      │	     └──counting_targets.json
       ├── input
       │   └──h1b_input.csv
       ├── output

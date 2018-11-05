@@ -62,4 +62,13 @@ After acquiring indices of all required columns, this program can get all requir
 Lastly, the statistics of values from tageted columns are calculated and written into corresponding output files. 
 
 # Run Instructions
+**Run Script**
+
 Save the input file as `./input/h1b_input.csv` then run `./run.sh`.
+
+**Run Unit Tests**
+
+```
+cd src
+./run_test.sh 
+```

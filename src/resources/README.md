@@ -22,7 +22,7 @@ Each object has the following fields:
 
 `qualified_values`: Stores all possible values that are considered "qualified". 
 
-Currently, there is only one object with only one qualified value as shown above, but this structure allowsthe flexibility of adding more criteria and qualified values in the future. 
+Currently, there is only one object with only one qualified value as shown above, but this structure allows the flexibility of adding more criteria and qualified values in the future. 
 
 
 **`counting_targets.json`**:

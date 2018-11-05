@@ -18,7 +18,7 @@ This folder has the following 2 files that contains necessary information for th
 ```
 Each object has the following fields:
 
-`input_col_names`: Stores a list of column names that might be encountered when dealing with data from differet years.
+`input_col_names`: Stores a list of column names that might be encountered when dealing with data from different years.
 
 `qualified_values`: Stores all possible values that are considered "qualified". 
 

@@ -51,7 +51,7 @@ Load the input data using python's built-in csv library. This may take some time
 
 **Data Handling:** 
 
-As each row is read as a list of strings using python's csv.reader() method, this program searches only the first row for the index of interested columns. However, data from different years might use different column names for same type of information (e.g., `CASE_STATUS` and `STATUS` columns). Therefore, `criteria.json` and `counting_targets.json` in `src/resources/` contain all required information for getting correct columns for data filtering and data counting, respectively. The purpose of this step is to get indices of all required columns for later processing.
+As each row is read as a list of strings using python's csv.reader() method, this program searches only the first row for the index of interested columns. However, data from different years might use different column names for same type of information (e.g., `CASE_STATUS` and `STATUS` columns). Therefore, I included `src/resources/criteria.json` and `src/resources/counting_targets.json` to store all required information for getting correct columns for data filtering and data counting, respectively. Please see [`src/resources/README.md`](src/resources/README.md) for more details. The purpose of this step is to get indices of all required columns for later processing.
 
 **Data Processing:**
 
